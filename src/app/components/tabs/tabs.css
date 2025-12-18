@@ -2,4 +2,12 @@
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+
+    & .container__tab{
+        flex: 1;
+        & svg{
+            display: block;
+            margin: auto;
+        }
+    }
 }
