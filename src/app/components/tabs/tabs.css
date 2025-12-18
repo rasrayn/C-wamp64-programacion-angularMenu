@@ -2,12 +2,44 @@
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    background-color: #D3D5D4;
+
+    min-width: 100dvw;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: .2rem .1rem .4rem .1rem;
+    object-fit: hidden;
+    
 
     & .container__tab{
-        flex: 1;
+        flex: 2;
+        width: 100%;
         & svg{
             display: block;
             margin: auto;
         }
     }
 }
+
+.buscar {
+    height: 50px;
+}
+
+.user {
+    stroke: black;
+}
+
+.seleccionado {
+    border-radius: 15px;
+    background-color: #0471A6;
+    fill: #FCFAF9;
+    transition: fill 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.seleccionado .user{
+    stroke: #FCFAF9;
+    transition: stroke 0.2s ease-in-out;
+}
+

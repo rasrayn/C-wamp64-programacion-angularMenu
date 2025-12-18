@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import { NgClass } from "@angular/common";
 
 @Component({
   selector: 'app-tabs',
-  imports: [],
+  imports: [NgClass],
   templateUrl: './tabs.html',
   styleUrl: './tabs.css',
 })
@@ -14,7 +15,7 @@ export class Tabs {
       if(event instanceof NavigationEnd){
         console.log("evento", event);
         switch (event.urlAfterRedirects){
-          case "":
+          case "/":
             this.seleccionado = [true, false, false, false];
             break
           case "/buscar":
@@ -27,7 +28,7 @@ export class Tabs {
             this.seleccionado = [false, false, false, true];
             break
           default:
-            this.seleccionado = [true, false, false, false];
+            this.seleccionado = [false, false, false, false];
             break
         }
       }
