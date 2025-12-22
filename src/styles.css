@@ -1,14 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 /*Reset CSS*/
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 :root {
     --color-primary: #D3D5D4;
     --color-secondary: #0471A6;
     --color-tercero: #60AB9A;
-    --color-contraste: #0471A6;
+    --color-contraste: #4B4E58;
     --color-contraste2: #D87CAC;
+    --color-texto1: #000;
+    --color-texto2: #fff;
     /*Tipografía*/
-    --tipo-principal: Helvetica, Arial, sans-serif;
+    --tipo-principal: Montserrat;
     --tipo-secundaria: Verdana;
 }
 

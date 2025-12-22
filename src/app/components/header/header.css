@@ -1,0 +1,65 @@
+header {
+    height: 5rem;
+    margin-bottom: 2rem;
+
+    position: relative;
+    border-radius: 0 0 15% 15%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    background-color: var(--color-secondary);
+    box-shadow: 0 0 2rem var(--color-contraste);
+
+    transition: 0.35s ease-in;
+}
+
+header::before {
+    position: absolute;
+    content: '';
+    background-image: url('../../../assets/img/portada.jpg');
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 500ms ease ;
+}
+/*De esta forma con el before hacemos que se anime la opacidad y el que aparezca la imgen, ademas de que cuando el header no este extendido no haya imagen*/
+header.extendido::before{
+    opacity: 0.5;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-weight: 800;
+    font-size: x-large;
+    color: var(--color-texto2);
+    z-index: 5;
+
+
+}
+
+.extendido {
+    height: 14rem;
+    
+}
+.fade-in{
+    animation: fade-out 450ms ease backwards;
+    animation-direction: reverse;
+}
+
+.fade-out{
+    animation: fade-out 250ms ease ;
+}
+
+@keyframes fade-out {
+    100%{
+        opacity: 0%;
+    }
+}
+

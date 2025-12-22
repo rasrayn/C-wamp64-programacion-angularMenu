@@ -1,8 +1,6 @@
 /*Reset CSS*/
 
 :root {
-    --color-primary: #181818;
-    --color-secondary: #f0f0f0;
     /*Tipografía*/
     --tipo-principal: Helvetica, Arial, sans-serif;
     --tipo-secundaria: Verdana;
@@ -10,10 +8,10 @@
     /*Adaptación al modo oscuro*/
 @media (prefers-color-scheme:dark){
     :root {
-        --color-primary: #f0f0f0;
+        /*--color-primary: #f0f0f0;
         --color-secundary: #181818;
         --color-text1: #fff;
-        --color-text2: #000;
+        --color-text2: #000;*/
     }
     .btn{
         border-radius: 10px;

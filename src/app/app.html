@@ -1,7 +1,10 @@
-<a [routerLink]="['/articulo']">Articulo</a>
-<a [routerLink]="['/menu']">Menú</a>
+
 <!--esta etiqueta será reemplazada por las etiquetas html de los componentes gracias a las rutas y es lo que se verá en pantalla
 lo que escribamos fuera de esta etiqueta se vera siempre y lo que escribimos dentro solo cuando estemos cargando ese omponente. -->
+<app-header></app-header>
+
+<a [routerLink]="['/articulo']">Articulo</a>
+<a [routerLink]="['/menu']">Menú</a>
 <router-outlet></router-outlet>
 <app-tabs></app-tabs>
 
