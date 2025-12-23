@@ -25,7 +25,7 @@ export const routes: Routes = [
         component: Buscar
     },
     {
-        path: "menu",
+        path: "menu/:id",
         component: Menu
     },
     {

@@ -31,7 +31,7 @@ header::before {
 }
 /*De esta forma con el before hacemos que se anime la opacidad y el que aparezca la imgen, ademas de que cuando el header no este extendido no haya imagen*/
 header.extendido::before{
-    opacity: 0.5;
+    opacity: 0.75;
 }
 
 h1 {
@@ -45,7 +45,7 @@ h1 {
 }
 
 .extendido {
-    height: 14rem;
+    height: 12rem;
     
 }
 .fade-in{
